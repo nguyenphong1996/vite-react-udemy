@@ -2,12 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { SecondComponennt, ThirdComponennt } from './components/learn/TestComponennt'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
-    <>
+    <div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -17,12 +19,11 @@ function App() {
         </a>
       </div>
       <h1>Hello World</h1>
-      <div>
-        <h2>Đây là dòng thứ 2</h2>
-      </div>
+      <SecondComponennt />
+      <ThirdComponennt />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is number 1{count}
+          count is{count}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
@@ -31,7 +32,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 
