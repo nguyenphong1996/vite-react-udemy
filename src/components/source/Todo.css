@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 5px;
     font-family: Arial, sans-serif;
 }
@@ -17,7 +18,7 @@
     font-weight: bold;
     color: rgba(17, 150, 79, 0.792);
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 50px;
 }
 
 .addTodo {
@@ -45,4 +46,23 @@
     font-weight: bold;
     font-size: larger;
     color: white;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.containerTodoList {
+    margin-top: 50px;
+    width: 500px;
+    padding: 50px auto;
+    border: 1px solid black;
+}
+
+.Todo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    padding: 8px;
 }
