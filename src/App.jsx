@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { SecondComponennt, ThirdComponennt } from './components/learn/TestComponennt'
+import NewComponent from './components/learn/NewComponent'
 
 
 
@@ -19,6 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Hello World</h1>
+      <NewComponent />
       <SecondComponennt />
       <ThirdComponennt />
       <div className="card">
